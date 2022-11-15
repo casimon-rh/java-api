@@ -2,9 +2,38 @@
 
 Simple Java EE API (jax-rs & ejb)
 
-## Base Image
+## Techs
 
 > registry.redhat.io/jboss-eap-7/eap74-openjdk11-openshift-rhel8:7.4.7-8
+> Java 11
+
+## Tree
+
+```bash
+.
+├── .gitignore
+├── .vscode
+│   ├── extensions.json
+│   └── settings.json
+├── Readme.md
+├── docker
+│   └── jboss.dockerfile
+├── pom.xml
+└── src
+    └── main
+        ├── java
+        │   └── com
+        │       └── redhat
+        │           └── svcs
+        │               ├── MyApplication.java
+        │               ├── beans
+        │               │   └── HelloBean.java
+        │               └── services
+        │                   └── Hello.java
+        └── resources
+            └── META-INF
+                └── MANIFEST.MF
+```
 
 ## How to run:
 
